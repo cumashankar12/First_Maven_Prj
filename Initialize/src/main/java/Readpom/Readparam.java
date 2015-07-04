@@ -66,7 +66,7 @@ public class Readparam {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		final Readparam readpar = new Readparam(args);
-		TestNG testNG = new TestNG();
+		//TestNG testNG = new TestNG();
 		
 	}
 
