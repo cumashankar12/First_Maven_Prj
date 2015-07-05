@@ -15,9 +15,8 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 public class Readparam {
-	protected Map<String, String> data = new java.util.HashMap<String, String>();
-	String prjpath;
-	public Readparam(final String... args){
+	
+	/*public Readparam(final String... args){
 		for(String arg : args) {
 			final String[] split = arg.split("=", 2);
 			if(split.length == 2 && null != split[0].trim()) { // configuration
@@ -31,7 +30,7 @@ public class Readparam {
 			}
 		}
 		
-	}
+	}*/
 	public void xmlDocumentCreation(){
 		try{
 		DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
@@ -65,9 +64,22 @@ public class Readparam {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		final Readparam readpar = new Readparam(args);
+		//final Readparam readpar = new Readparam(args);
 		//TestNG testNG = new TestNG();
-		
+		Map<String, String> data = new java.util.HashMap<String, String>();
+		String prjpath;
+		for(String arg : args) {
+			final String[] split = arg.split("=", 2);
+			if(split.length == 2 && null != split[0].trim()) { // configuration
+				data.put(split[0].trim(), split[1].trim());
+				if(split[0].trim().equalsIgnoreCase("suite-template")){
+					prjpath = split[0].trim();
+					System.out.println("Project path is - " + prjpath);
+				}
+				System.out.println("arguments - "+ split[0].trim() + "--" + split[1].trim());
+				
+			}
+		}
 	}
 
 }
