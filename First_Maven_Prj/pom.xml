@@ -3,6 +3,7 @@
   <groupId>sample</groupId>
   <artifactId>First_Maven_Prj</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
   <build>
     <plugins>
       <plugin>
