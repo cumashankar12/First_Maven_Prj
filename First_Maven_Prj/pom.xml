@@ -67,5 +67,10 @@
         	<artifactId>testng</artifactId>
         	<version>6.8.8</version>
         </dependency>
+         <dependency>
+        	<groupId>Readpom</groupId>
+        	<artifactId>Initialize</artifactId>
+        	<version>0.0.1-SNAPSHOT</version>
+        </dependency>
   </dependencies>
 </project>
