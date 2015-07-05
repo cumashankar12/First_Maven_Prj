@@ -20,7 +20,6 @@
         </executions>
         <configuration>
           <mainClass>Readpom.Readparam</mainClass>
-          
           <arguments>
           <argument>build=3</argument>
             <argument>browser=${browser}</argument>
