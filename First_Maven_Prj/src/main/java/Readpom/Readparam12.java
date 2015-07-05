@@ -13,7 +13,7 @@ import javax.xml.transform.stream.StreamResult;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-public class Readparam {
+public class Readparam12 {
 	
 	/*public Readparam(final String... args){
 		for(String arg : args) {
